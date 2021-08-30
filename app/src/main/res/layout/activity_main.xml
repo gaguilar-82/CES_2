@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-41dp"
+        tools:layout_editor_absoluteY="-176dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TVHeader01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/tv_Header01"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/TVHeader02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/tv_Header02"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/TVHeader03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/tv_Header03"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/td_Fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/td_Fecha"
+                android:focusable="false"
+                android:clickable="true"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_Municipio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/tv_Municipio"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/sp_Municipio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/txt_Localidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/txt_Localidad"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txt_Colonia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="@string/tv_Colonia"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txt_Manzana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/txt_Manzana"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txt_Lote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/txt_Lote"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_Ubicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="localizacion"
+                android:text="@string/btn_Ubicacion" />
+
+            <TextView
+                android:id="@+id/tv_Coordenadas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/tv_Coordenadas"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/Txt_Generales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/tv_Generales"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_ApellidoPaterno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/txt_ApellidoPaterno"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txt_ApellidoMaterno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/txt_ApellidoMaterno"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txt_Nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/txt_Nombre"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txt_CURP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/txt_CURP"
+                android:importantForAutofill="no"
+                android:inputType="textCapCharacters"
+                android:maxLength="18"
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/txt_LugarNacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/txt_LugarNacimiento"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/td_FechaNacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:focusable="false"
+                android:clickable="true"
+                android:hint="@string/td_FechaNacimiento"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_Escolaridad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/tv_Escolaridad"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/sp_Escolaridad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tv_EdoCivil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/tv_EdoCivil"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/sp_EdoCivil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/txt_Ocupacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/txt_Ocupacion"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txt_Empresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/txt_Empresa"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txt_Antiguedad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/txt_Antiguedad"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txt_Familia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/txt_Familia"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_Distribucion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:importantForAutofill="no"
+                android:text="@string/tv_DistribucionGasto"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/txt_Ingreso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/txt_Ingreso"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txt_GastoAlimentacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/txt_GastoAlimentacion"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txt_GastoSalud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/txt_GastoSalud"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txt_GastoEducacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/txt_GastoEducacion"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txt_GastoOtros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/txt_GastoOtros"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_Gasto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/txt_Gasto"
+                android:importantForAutofill="no"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_SeguridadSocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/tv_SeguridadSocial"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/sp_SeguridadSocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/tv_CaracteristicasVivienda"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/sp_UsoVivienda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tv_Material"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/txt_Material"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/sp_Material"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tv_Muros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/txt_Muros"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/sp_Muros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tv_Techo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/txt_Techo"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/sp_Techo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tv_Piso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/txt_Piso"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/sp_Piso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tv_Cuartos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/txt_Cuartos"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_Recamaras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="center_horizontal"
+                android:hint="@string/txt_Recamaras"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chk_Cocina"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/txt_Cocina"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/chk_Sala"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/txt_Sala"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/chk_Bano"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/txt_bano"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_Servicios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/txt_Servicios"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chk_Agua"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/txt_Agua"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/chk_Drenaje"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/txt_Drenaje"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/chk_Electricidad"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/txt_Electricidad"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chk_Ninguno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/txt_Ninguno"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/txt_Observaciones"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="8dp"
+                android:autofillHints=""
+                android:gravity="start|top"
+                android:hint="@string/txt_Observaciones"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_Verificar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="verificacion"
+                android:text="@string/btn_Verificar"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="crearPDF"
+                android:text="@string/btn_PDF"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
